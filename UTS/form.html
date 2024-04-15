@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Bimbingan Belajar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+ 
+</head>
+<body>
+    <div class="navbar">
+        <a href="landingPage.html"><img src="logo.png" alt="Logo" class="navbar-logo"></a>
+        <a href="http://wa.me/6281334613705">Contact</a>
+        <a href="landingPage.html">Home</a>
+       
+    </div>
+   
+    <div class="container">
+        <h1>EECC</h1>
+        <h1>Form Pendaftaran </h2>
+        <h4>Silahkan isi form dibawah ini dan konfirmasi kepada admin</h5>
+        <form action="register.php" method="post">
+            <label for="nama" class="required"><strong>Nama Lengkap:</strong></label>
+            <input type="text" id="nama" name="nama" required>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tempat-lahir" class="required"><strong>Tempat Lahir:</strong></label>
+                    <input type="text" id="tempat-lahir" name="tempat-lahir" required>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal-lahir" class="required"><strong>Tanggal Lahir:</strong></label>
+                    <input type="text" id="tanggal-lahir" name="tanggal-lahir" required>
+                </div>
+            </div>
+            <label for="alamat" class="required"><strong>Alamat Lengkap:</strong></label>
+            <textarea id="alamat" name="alamat" required></textarea>
+            
+            <div class="gender-row">
+                
+            <label for="jenis-kelamin" class="required"><strong>Jenis Kelamin:</strong></label>
+            <select id="jenis-kelamin" name="jenis-kelamin" required>
+                <option value="pilih"></option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            </div>
+            <div class="surel-row">
+                <div class="surel-group">
+            <label for="email" class="required"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="surel-group">
+            <label for="no-hp" class="required"><strong>No HP:</strong></label>
+            <input type="tel" id="no-hp" name="no-hp" required>
+            </div>
+            </div>
+
+            <div class="ortu-row">
+                <div class="ortu-group">
+            <label for="nama-ortu" class="required"><strong>Nama Orang Tua/Wali:</strong></label>
+            <input type="text" id="nama-ortu" name="nama-ortu" required>
+            </div>
+            <div class="ortu-group">
+            <label for="no-hp-ortu" class="required"><strong>No HP Orang Tua/Wali:</strong></label>
+            <input type="tel" id="no-hp-ortu" name="no-hp-ortu" required>
+            </div>
+            </div>
+            <label for="agama" class="required"><strong>Agama:</strong></label>
+            <input type="text" id="agama" name="agama" required>
+
+            <label for="program" class="required"><strong>Program:</strong></label>
+            <div id="program" class="program-group">
+                <input type="radio" id="intensif-1" name="program" value="Intensif 1 bulan" required>
+                <label for="intensif-1">Intensif 1 bulan</label><br>
+                <input type="radio" id="intensif-2" name="program" value="Intensif 2 bulan" required>
+                <label for="intensif-2">Intensif 2 bulan</label><br>
+                <input type="radio" id="intensif-3" name="program" value="Intensif 3 bulan" required>
+                <label for="intensif-3">Intensif 3 bulan</label><br>
+                <input type="radio" id="holiday-1" name="program" value="Holiday 1 minggu" required>
+                <label for="holiday-1">Holiday 1 minggu</label><br>
+                <input type="radio" id="holiday-2" name="program" value="Holiday 2 minggu" required>
+                <label for="holiday-2">Holiday 2 minggu</label><br>
+                <input type="radio" id="private" name="program" value="Private Class" required>
+                <label for="private">Private Class</label><br>
+                <input type="radio" id="online" name="program" value="Online Class" required>
+                <label for="online">Online Class</label>
+            </div>
+
+            <label for="periode"class="required"><strong>Periode:</strong></label>
+            <div id="periode" class="periode-group">
+                <input type="radio" id="periode-1" name="periode" value="22 April" required>
+                <label for="periode-1">22 April</label><br>
+                
+                <input type="radio" id="periode-2" name="periode" value="6 Mei" required>
+                <label for="periode-2">6 Mei</label><br>
+                
+                <input type="radio" id="periode-3" name="periode" value="3 Juni" required>
+                <label for="periode-3">3 Juni</label><br>
+            </div>
+
+            <label for="pembayaran" class="required"><strong>Metode Pembayaran:</strong></label>
+            <div id="pembayaran" class="pembayaran-group">
+                <input type="radio" id="cash" name="pembayaran" value="cash" required>
+                <label for="cash">Cash</label><br>
+                
+                <input type="radio" id="transfer" name="pembayaran" value="transfer" required>
+                <label for="transfer">Transfer</label><br>
+            </div>
+
+            <label for="persetujuan"class="required"><strong>Persetujuan Pendaftaran:</strong></label>
+            
+                <br><br><input type="checkbox">
+                <label for="informasi">Memberikan informasi data diri dengan benar sesuai dengan identitas diri resmi</label><br><br>
+            
+                <input type="checkbox" >
+                <label for="sesuai-jadwal">Siap mengikuti program kursus sesuai dengan jadwal yang diberikan</label><br><br>
+            
+                <input type="checkbox" >
+                <label for="ketentuan">Bersedia untuk mengikuti ketentuan-ketentuan dan peraturan dari EECC Pare selama menjalankan kursus</label><br><br>
+            
+                <input type="checkbox" >
+                <label for="tidak-minta-kembali">Tidak akan meminta kembali DP (sebelum kursus dimulai), dan atau sisa pembayaran (jika sudah masuk mengikuti kursus) dengan alasan apapun</label><br><br>
+            
+                <input type="checkbox">
+                <label for="menerima-sertifikat">Akan menerima sertifikat sesuai dengan data yang saya masukkan di formulir ini setelah benar-benar menjalankan seluruh rangkaian kegiatan sesuai dengan program yang saya pilih</label>
+                
+                <div class="button-container">
+                    <input type="submit" value="Submit" class="submit-button">
+                </div>
+        </form>
+        
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            Kompleks Kampung Inggris Jl. Flamboyan No. 109 Tulungrejo Pare Kediri - Jawa Timur<br><br>
+            <a href="http://www.eeccpare.com">www.eeccpare.com</a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
